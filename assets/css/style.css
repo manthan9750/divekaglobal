@@ -1,0 +1,158 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#fff;
+color:#222;
+overflow-x:hidden;
+}
+
+.logo{
+height:60px;
+}
+
+.navbar{
+padding:15px 0;
+}
+
+.nav-link{
+font-weight:500;
+margin-left:15px;
+color:#222 !important;
+}
+
+.nav-link:hover{
+color:#C9A33A !important;
+}
+
+.hero-section{
+padding:100px 0;
+background:#F7F4ED;
+}
+
+.hero-tag{
+color:#C9A33A;
+font-weight:600;
+letter-spacing:1px;
+}
+
+.hero-section h1{
+font-size:60px;
+font-weight:800;
+margin:20px 0;
+line-height:1.1;
+}
+
+.hero-section p{
+font-size:18px;
+color:#666;
+margin-bottom:30px;
+}
+
+.btn-gold{
+background:#C9A33A;
+color:white;
+padding:14px 32px;
+border:none;
+border-radius:10px;
+font-weight:600;
+}
+
+.btn-gold:hover{
+background:#B68B22;
+color:white;
+}
+
+.hero-image{
+max-width:100%;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.featured-products{
+padding:100px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:42px;
+font-weight:700;
+}
+
+.section-title p{
+color:#777;
+}
+
+.product-card{
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+margin-bottom:30px;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:15px;
+}
+
+.product-card h4{
+font-size:22px;
+font-weight:600;
+}
+
+.price{
+color:#C9A33A;
+font-size:24px;
+font-weight:700;
+margin:10px 0;
+}
+
+.why-us{
+background:#F7F4ED;
+padding:100px 0;
+text-align:center;
+}
+
+.why-us h2{
+margin-bottom:50px;
+font-weight:700;
+}
+
+.why-card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+height:100%;
+}
+
+.why-card i{
+font-size:40px;
+color:#C9A33A;
+margin-bottom:15px;
+}
+
+footer{
+background:#1E1E1E;
+color:white;
+padding:50px 0;
+text-align:center;
+}
