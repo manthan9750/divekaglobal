@@ -1,0 +1,334 @@
+/* ================= GLOBAL RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #F7F4ED;
+  color: #1E1E1E;
+  line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: #1E1E1E;
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #C9A33A;
+}
+
+.nav-links .active {
+  color: #C9A33A;
+}
+
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: #1E1E1E;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 50px;
+  color: #C9A33A;
+}
+
+.hero h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.hero-right img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+
+/* ================= BUTTONS ================= */
+.btn {
+  background: #C9A33A;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #B68B22;
+}
+
+.btn-outline {
+  border: 1px solid #C9A33A;
+  color: #C9A33A;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.btn-outline:hover {
+  background: #C9A33A;
+  color: #fff;
+}
+
+
+/* ================= SECTIONS ================= */
+.section {
+  padding: 60px 40px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+}
+
+
+/* ================= PRODUCT GRID ================= */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+.price {
+  color: #B68B22;
+  font-weight: bold;
+}
+
+
+/* ================= WHY / BENEFITS ================= */
+.why-grid, .benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.why-card, .benefit-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/* ================= TESTIMONIALS ================= */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* ================= CTA ================= */
+.cta {
+  background: #1E1E1E;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta h2 {
+  color: #C9A33A;
+}
+
+
+/* ================= FOOTER ================= */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+/* ================= PRODUCT PAGE CONTROLS ================= */
+.product-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 250px;
+}
+
+.filters button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: #C9A33A;
+  color: #fff;
+}
+
+
+/* ================= CART ================= */
+.cart-container {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+.cart-items {
+  flex: 2;
+}
+
+.cart-summary {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+/* ================= WISHLIST ================= */
+.wishlist-item {
+  display: flex;
+  gap: 15px;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+
+/* ================= PRODUCT DETAIL ================= */
+.product-detail {
+  display: flex;
+  gap: 30px;
+  padding: 60px;
+}
+
+.product-gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-detail {
+    flex-direction: column;
+  }
+
+  .cart-container {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
