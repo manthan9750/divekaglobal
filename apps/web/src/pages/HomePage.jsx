@@ -1,14 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Leaf, ShieldCheck, Heart, Sparkles, CheckCircle2, Instagram } from 'lucide-react';
-import { Button } from '@/components/ui/button.jsx';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion.jsx';
-import ProductCard from '@/components/ProductCard.jsx';
-import ReviewCard from '@/components/ReviewCard.jsx';
-import Navbar from '@/components/Navbar.jsx';
-import Footer from '@/components/Footer.jsx';
-import products from '@/data/products.js';
+import {
+  ArrowRight,
+  Leaf,
+  ShieldCheck,
+  Heart,
+  Sparkles,
+  CheckCircle2,
+  Instagram
+} from 'lucide-react';
+
+import { Button } from '../components/ui/button.jsx';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion.jsx';
+import ProductCard from '../components/ProductCard.jsx';
+import ReviewCard from '../components/ReviewCard.jsx';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
+import products from '../data/products.js';
 
 const HomePage = () => {
   const featuredProducts = products.filter(p => ['gud-bite-masala-paan', 'gud-bite-saffron-royal', 'gud-bite-tulsi-ginger', 'gud-bite-chocolate-fusion'].includes(p.id));
