@@ -1,8 +1,8 @@
 import React from 'react';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group.jsx';
-import { Label } from '@/components/ui/label.jsx';
+import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group.jsx';
+import { Label } from '..@/components/ui/label.jsx';
 import { Truck, FastForward, Zap } from 'lucide-react';
-import { formatPrice } from '@/utils/productHelpers.js';
+import { formatPrice } from '../utils/productHelpers.js';
 
 const ShippingSelector = ({ selectedMethod, onSelectMethod }) => {
   const options = [
