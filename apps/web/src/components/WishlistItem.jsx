@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Star, ShoppingCart, Trash2 } from 'lucide-react';
-import { useWishlist } from '@/context/WishlistContext.jsx';
-import { formatPrice } from '@/utils/productHelpers.js';
-import { Button } from '@/components/ui/button.jsx';
+import { useWishlist } from '../context/WishlistContext.jsx';
+import { formatPrice } from '../utils/productHelpers.js';
+import { Button } from '../components/ui/button.jsx';
 import {
   AlertDialog,
   AlertDialogAction,
