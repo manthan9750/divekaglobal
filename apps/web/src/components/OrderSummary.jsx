@@ -1,6 +1,6 @@
 import React from 'react';
-import { formatPrice } from '@/utils/productHelpers.js';
-import { Button } from '@/components/ui/button.jsx';
+import { formatPrice } from '../utils/productHelpers.js';
+import { Button } from '../components/ui/button.jsx';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
 
 const OrderSummary = ({ subtotal, shippingCost }) => {
