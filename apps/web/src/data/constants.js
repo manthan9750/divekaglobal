@@ -65,14 +65,14 @@ export const BREAKPOINTS = {
 };
 
 export const SOCIAL_URLS = {
-  facebook: 'https://facebook.com/divekaa',
-  instagram: 'https://instagram.com/divekaa',
-  twitter: 'https://twitter.com/divekaa',
-  linkedin: 'https://linkedin.com/company/divekaa'
+  facebook: 'https://facebook.com/divekaaglobal/',
+  instagram: 'https://instagram.com/divekaaglobal',
+  twitter: 'https://twitter.com/divekaaglobal',
+  linkedin: 'https://linkedin.com/company/divekaaglobal/'
 };
 
 export const CONTACT_INFO = {
   email: 'hello@divekaa.com',
-  phone: '+91 98765 43210',
+  phone: '+91 86928 88997',
   address: 'Mumbai, Maharashtra, India'
 };
