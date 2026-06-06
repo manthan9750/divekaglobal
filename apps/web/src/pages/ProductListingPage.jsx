@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { Filter, ChevronDown, SearchX, X } from 'lucide-react';
-import Navbar from '@/components/Navbar.jsx';
-import Footer from '@/components/Footer.jsx';
-import ProductCard from '@/components/ProductCard.jsx';
-import FilterSidebar from '@/components/FilterSidebar.jsx';
-import { Button } from '@/components/ui/button.jsx';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet.jsx';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu.jsx';
-import { Badge } from '@/components/ui/badge.jsx';
-import useFilters from '@/hooks/useFilters.js';
-import products from '@/data/products.js';
-import { SORT_OPTIONS } from '@/data/constants.js';
 
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
+import ProductCard from '../components/ProductCard.jsx';
+import FilterSidebar from '../components/FilterSidebar.jsx';
+
+import { Button } from '../components/ui/button.jsx';
+import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet.jsx';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuRadioGroup, DropdownMenuRadioItem, DropdownMenuTrigger } from '../components/ui/dropdown-menu.jsx';
+import { Badge } from '../components/ui/badge.jsx';
+
+import useFilters from '../hooks/useFilters.js';
+import products from '../data/products.js';
+import { SORT_OPTIONS } from '../data/constants.js';
 const ProductListingPage = () => {
   const { filters, filteredProducts, filterActions } = useFilters(products);
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
