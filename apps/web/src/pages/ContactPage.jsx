@@ -1,17 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Clock, MessageCircle } from 'lucide-react';
-
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs.jsx';
-
-import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
-
-import ContactForm from '../components/forms/ContactForm.jsx';
-import BusinessInquiryForm from '../components/forms/BusinessInquiryForm.jsx';
-import WholesaleInquiryForm from '../components/forms/WholesaleInquiryForm.jsx';
-
-import { CONTACT_INFO, SOCIAL_URLS } from '../data/constants.js';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs.jsx';
+import Navbar from '@/components/Navbar.jsx';
+import Footer from '@/components/Footer.jsx';
+import ContactForm from '@/components/forms/ContactForm.jsx';
+import BusinessInquiryForm from '@/components/forms/BusinessInquiryForm.jsx';
+import WholesaleInquiryForm from '@/components/forms/WholesaleInquiryForm.jsx';
+import { CONTACT_INFO, SOCIAL_URLS } from '@/data/constants.js';
 
 const ContactPage = () => {
   return (
