@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShoppingCart, Heart, Star } from 'lucide-react';
-import { useCart } from '@/context/CartContext.jsx';
-import { useWishlist } from '@/context/WishlistContext.jsx';
-import { formatPrice } from '@/utils/productHelpers.js';
-import { Badge } from '@/components/ui/badge.jsx';
-import { Button } from '@/components/ui/button.jsx';
+import { useCart } from '../context/CartContext.jsx';
+import { useWishlist } from '../context/WishlistContext.jsx';
+import { formatPrice } from '../utils/productHelpers.js';
+import { Badge } from '../components/ui/badge.jsx';
+import { Button } from '../components/ui/button.jsx';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils.js';
 
