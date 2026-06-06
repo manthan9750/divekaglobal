@@ -44,11 +44,8 @@ images: [masalaPaan],
     heritageStory: 'Saffron, the golden spice of royalty, has been a centerpiece of Indian luxury for generations. We bring this majestic ingredient into a daily wellness bite.',
     price: 499,
     originalPrice: 599,
-    image: 'https://images.unsplash.com/photo-1677299235887-294150f9124c',
-    images: [
-      'https://images.unsplash.com/photo-1677299235887-294150f9124c',
-      'https://images.unsplash.com/photo-1676448672121-ce09fbbf69e5'
-    ],
+image: saffronRoyal,
+images: [saffronRoyal],
     rating: 5.0,
     reviews: [
       { author: 'Anjali Desai', rating: 5, text: 'The saffron quality is exceptional. You can taste the premium ingredients.', date: '2026-06-01' },
@@ -70,11 +67,8 @@ images: [masalaPaan],
     heritageStory: 'A nostalgic nod to childhood favorites, reimagined for the modern, health-conscious consumer using unrefined jaggery.',
     price: 299,
     originalPrice: 399,
-    image: 'https://images.unsplash.com/photo-1666973523950-3ca3149d348c',
-    images: [
-      'https://images.unsplash.com/photo-1666973523950-3ca3149d348c',
-      'https://images.unsplash.com/photo-1672702959512-af149104c388'
-    ],
+image: butterscotch,
+images: [butterscotch],
     rating: 4.6,
     reviews: [
       { author: 'Neha Singh', rating: 5, text: 'Tastes just like childhood memories but healthier.', date: '2026-05-30' },
@@ -96,10 +90,8 @@ images: [masalaPaan],
     heritageStory: 'Rose has been used in Ayurvedic practices to calm the mind and cool the body. We capture this essence in every bite.',
     price: 349,
     originalPrice: 449,
-    image: 'https://images.unsplash.com/photo-1672702959512-af149104c388',
-    images: [
-      'https://images.unsplash.com/photo-1672702959512-af149104c388'
-    ],
+ image: roseDelight,
+images: [roseDelight],
     rating: 4.9,
     reviews: [
       { author: 'Pooja Reddy', rating: 5, text: 'The rose flavor is elegant and calming.', date: '2026-06-02' }
@@ -120,10 +112,8 @@ images: [masalaPaan],
     heritageStory: 'Tulsi (Holy Basil) and Ginger are the cornerstones of Indian home remedies. This bite is your daily dose of ancestral wisdom.',
     price: 329,
     originalPrice: 429,
-    image: 'https://images.unsplash.com/photo-1532666661413-871a4227e256',
-    images: [
-      'https://images.unsplash.com/photo-1532666661413-871a4227e256'
-    ],
+image: tulsiGinger,
+images: [tulsiGinger],
     rating: 4.7,
     reviews: [
       { author: 'Sanjay Gupta', rating: 5, text: 'Perfect for immunity. The tulsi-ginger combo is powerful.', date: '2026-05-29' }
@@ -144,10 +134,8 @@ images: [masalaPaan],
     heritageStory: 'Inspired by the classic Indian summer drink Nimbu Pani, captured in a convenient, health-boosting bite.',
     price: 299,
     originalPrice: 399,
-    image: 'https://images.unsplash.com/photo-1685364085151-39d35cbace40',
-    images: [
-      'https://images.unsplash.com/photo-1685364085151-39d35cbace40'
-    ],
+image: lemonMint,
+images: [lemonMint],
     rating: 4.5,
     reviews: [
       { author: 'Ritu Saxena', rating: 4, text: 'So refreshing! Perfect after meals.', date: '2026-06-03' }
@@ -168,10 +156,8 @@ images: [masalaPaan],
     heritageStory: 'Cardamom is the queen of spices. We use handpicked green pods to ensure the most vibrant, authentic flavor.',
     price: 329,
     originalPrice: 429,
-    image: 'https://images.unsplash.com/photo-1622957744298-a874da73e802',
-    images: [
-      'https://images.unsplash.com/photo-1622957744298-a874da73e802'
-    ],
+image: elaichiDelight,
+images: [elaichiDelight],
     rating: 4.8,
     reviews: [
       { author: 'Lakshmi Rao', rating: 5, text: 'The cardamom quality is outstanding.', date: '2026-05-31' }
@@ -192,10 +178,8 @@ images: [masalaPaan],
     heritageStory: 'Bridging the gap between a modern chocolate craving and traditional unrefined sweetness.',
     price: 349,
     originalPrice: 449,
-    image: 'https://images.unsplash.com/photo-1625753733975-b20b4973200d',
-    images: [
-      'https://images.unsplash.com/photo-1625753733975-b20b4973200d'
-    ],
+image: chocolateFusion,
+images: [chocolateFusion],
     rating: 4.9,
     reviews: [
       { author: 'Simran Kaur', rating: 5, text: 'Best chocolate flavor with health benefits.', date: '2026-06-04' }
@@ -216,10 +200,8 @@ images: [masalaPaan],
     heritageStory: 'Saunf (fennel) is a staple in every Indian household for good digestion. We’ve elevated it into a perfect daily bite.',
     price: 279,
     originalPrice: 379,
-    image: 'https://images.unsplash.com/photo-1612357005122-d4845440510f',
-    images: [
-      'https://images.unsplash.com/photo-1612357005122-d4845440510f'
-    ],
+image: fennelFresh,
+images: [fennelFresh],
     rating: 4.6,
     reviews: [
       { author: 'Deepak Sharma', rating: 4, text: 'Classic fennel taste. Works wonders for digestion.', date: '2026-05-27' }
@@ -240,10 +222,8 @@ images: [masalaPaan],
     heritageStory: 'Celebrating the king of fruits, this bite captures the joy of Indian summers using real fruit pulp and jaggery.',
     price: 329,
     originalPrice: 429,
-    image: 'https://images.unsplash.com/photo-1677581329080-f7895dcdfcdd',
-    images: [
-      'https://images.unsplash.com/photo-1677581329080-f7895dcdfcdd'
-    ],
+image: mangoTwist,
+images: [mangoTwist],
     rating: 4.7,
     reviews: [
       { author: 'Shreya Jain', rating: 5, text: 'Tastes like real mangoes! The natural flavor is incredible.', date: '2026-06-05' }
@@ -264,10 +244,8 @@ images: [masalaPaan],
     heritageStory: 'A combination deeply rooted in coastal Indian traditions, offering wholesome fats and unrefined sugars.',
     price: 319,
     originalPrice: 419,
-    image: 'https://images.unsplash.com/photo-1646685179802-56dd30d6fd3a',
-    images: [
-      'https://images.unsplash.com/photo-1646685179802-56dd30d6fd3a'
-    ],
+image: coconutJaggery,
+images: [coconutJaggery],
     rating: 4.8,
     reviews: [
       { author: 'Karthik Nair', rating: 5, text: 'The jaggery-coconut combo is perfect.', date: '2026-05-26' }
@@ -288,10 +266,8 @@ images: [masalaPaan],
     heritageStory: 'The ultimate comforting spice duo from traditional Indian Chai, transformed into a convenient wellness bite.',
     price: 329,
     originalPrice: 429,
-    image: 'https://images.unsplash.com/photo-1559716701-314fb2ab531e',
-    images: [
-      'https://images.unsplash.com/photo-1559716701-314fb2ab531e'
-    ],
+image: gingerCardamom,
+images: [gingerCardamom],
     rating: 4.9,
     reviews: [
       { author: 'Ramesh Gupta', rating: 5, text: 'The warming effect is amazing. Perfect for winter.', date: '2026-05-25' }
