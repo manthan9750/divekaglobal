@@ -21,12 +21,8 @@ const products = [
     heritageStory: 'Inspired by the centuries-old Indian tradition of concluding meals with a refreshing paan, crafted to deliver the same aromatic satisfaction without refined sugar.',
     price: 349,
     originalPrice: 449,
-    image: 'https://images.unsplash.com/photo-1676448672121-ce09fbbf69e5',
-    images: [
-      'https://images.unsplash.com/photo-1676448672121-ce09fbbf69e5',
-      'https://images.unsplash.com/photo-1677299235887-294150f9124c',
-      'https://images.unsplash.com/photo-1666973523950-3ca3149d348c'
-    ],
+image: masalaPaan,
+images: [masalaPaan],
     rating: 4.8,
     reviews: [
       { author: 'Meera Iyer', rating: 5, text: 'Authentic paan flavor without the mess. Love the natural ingredients!', date: '2026-05-28' },
