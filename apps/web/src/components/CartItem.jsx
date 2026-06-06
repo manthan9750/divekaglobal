@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Minus, Plus, Trash2 } from 'lucide-react';
-import { useCart } from '@/context/CartContext.jsx';
-import { formatPrice } from '@/utils/productHelpers.js';
-import { Button } from '@/components/ui/button.jsx';
+import { useCart } from '../context/CartContext.jsx';
+import { formatPrice } from '../utils/productHelpers.js';
+import { Button } from '../components/ui/button.jsx';
 import {
   AlertDialog,
   AlertDialogAction,
