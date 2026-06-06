@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Star, Minus, Plus, ShoppingCart, Heart, ShieldCheck, Truck, Leaf } from 'lucide-react';
-
-import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
-import ProductGallery from '../components/ProductGallery.jsx';
-import RelatedProducts from '../components/RelatedProducts.jsx';
-import ReviewCard from '../components/ReviewCard.jsx';
-
-import { Button } from '../components/ui/button.jsx';
-import { Badge } from '../components/ui/badge.jsx';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs.jsx';
-
-import { useCart } from '../context/CartContext.jsx';
-import { useWishlist } from '../context/WishlistContext.jsx';
-
-import { getProductById, getRelatedProducts, formatPrice } from '../utils/productHelpers.js';
-import products from '../data/products.js';
-
+import Navbar from '@/components/Navbar.jsx';
+import Footer from '@/components/Footer.jsx';
+import ProductGallery from '@/components/ProductGallery.jsx';
+import RelatedProducts from '@/components/RelatedProducts.jsx';
+import ReviewCard from '@/components/ReviewCard.jsx';
+import { Button } from '@/components/ui/button.jsx';
+import { Badge } from '@/components/ui/badge.jsx';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs.jsx';
+import { useCart } from '@/context/CartContext.jsx';
+import { useWishlist } from '@/context/WishlistContext.jsx';
+import { getProductById, getRelatedProducts, formatPrice } from '@/utils/productHelpers.js';
+import products from '@/data/products.js';
 import { toast } from 'sonner';
 
 const ProductDetailPage = () => {
