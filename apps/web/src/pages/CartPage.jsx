@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { ShoppingCart } from 'lucide-react';
-
-import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
-import CartItem from '../components/CartItem.jsx';
-import OrderSummary from '../components/OrderSummary.jsx';
-import ShippingSelector from '../components/ShippingSelector.jsx';
-import EmptyState from '../components/EmptyState.jsx';
-
-import { useCart } from '../context/CartContext.jsx';
+import Navbar from '@/components/Navbar.jsx';
+import Footer from '@/components/Footer.jsx';
+import CartItem from '@/components/CartItem.jsx';
+import OrderSummary from '@/components/OrderSummary.jsx';
+import ShippingSelector from '@/components/ShippingSelector.jsx';
+import EmptyState from '@/components/EmptyState.jsx';
+import { useCart } from '@/context/CartContext.jsx';
 
 const CartPage = () => {
   const { cartItems, cartTotal } = useCart();
