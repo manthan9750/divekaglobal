@@ -1,11 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
-import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
-import IngredientSpotlight from '../components/IngredientSpotlight.jsx';
-import ComparisonTable from '../components/ComparisonTable.jsx';
-
+import Navbar from '@/components/Navbar.jsx';
+import Footer from '@/components/Footer.jsx';
+import IngredientSpotlight from '@/components/IngredientSpotlight.jsx';
+import ComparisonTable from '@/components/ComparisonTable.jsx';
 import { Leaf } from 'lucide-react';
 
 const BenefitsPage = () => {
