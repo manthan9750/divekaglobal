@@ -1,14 +1,12 @@
 import React from 'react';
 import { Heart } from 'lucide-react';
-
-import Navbar from '../components/Navbar.jsx';
-import Footer from '../components/Footer.jsx';
-import WishlistItem from '../components/WishlistItem.jsx';
-import EmptyState from '../components/EmptyState.jsx';
-import RelatedProducts from '../components/RelatedProducts.jsx';
-
-import { useWishlist } from '../context/WishlistContext.jsx';
-import products from '../data/products.js';
+import Navbar from '@/components/Navbar.jsx';
+import Footer from '@/components/Footer.jsx';
+import WishlistItem from '@/components/WishlistItem.jsx';
+import EmptyState from '@/components/EmptyState.jsx';
+import RelatedProducts from '@/components/RelatedProducts.jsx';
+import { useWishlist } from '@/context/WishlistContext.jsx';
+import products from '@/data/products.js';
 
 const WishlistPage = () => {
   const { wishlistItems } = useWishlist();
