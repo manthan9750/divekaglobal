@@ -1,3 +1,16 @@
+import masalaPaan from '@/assets/products/masala-paan.jpg';
+import saffronRoyal from '@/assets/products/saffron-royal.jpg';
+import butterscotch from '@/assets/products/butterscotch.jpg';
+import roseDelight from '@/assets/products/rose-delight.jpg';
+import tulsiGinger from '@/assets/products/tulsi-ginger.jpg';
+import lemonMint from '@/assets/products/lemon-mint.jpg';
+import elaichiDelight from '@/assets/products/elaichi-delight.jpg';
+import chocolateFusion from '@/assets/products/chocolate-fusion.jpg';
+import fennelFresh from '@/assets/products/fennel-fresh.jpg';
+import mangoTwist from '@/assets/products/mango-twist.jpg';
+import coconutJaggery from '@/assets/products/coconut-jaggery.jpg';
+import gingerCardamom from '@/assets/products/ginger-cardamom.jpg';
+
 const products = [
   {
     id: 'gud-bite-masala-paan',
