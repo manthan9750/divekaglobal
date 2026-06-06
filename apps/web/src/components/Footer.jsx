@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Twitter, Linkedin, ArrowRight } from 'lucide-react';
-import { BRAND_NAME, TAGLINE } from '@/data/constants.js';
-import { Input } from '@/components/ui/input.jsx';
-import { Button } from '@/components/ui/button.jsx';
+import { BRAND_NAME, TAGLINE } from '../data/constants.js';
+import { Input } from '../components/ui/input.jsx';
+import { Button } from '../components/ui/button.jsx';
 import { toast } from 'sonner';
 
 const Footer = () => {
