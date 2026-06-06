@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { ShoppingCart, Heart, Search, Menu, X } from 'lucide-react';
 import { useCart } from '../context/CartContext.jsx';
 import { useWishlist } from '../context/WishlistContext.jsx';
 import { BRAND_NAME } from '../data/constants.js';
