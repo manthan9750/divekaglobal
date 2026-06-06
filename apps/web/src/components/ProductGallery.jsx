@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
-import { cn } from '@/lib/utils.js';
-import { Button } from '@/components/ui/button.jsx';
+import { cn } from '../lib/utils.js';
+import { Button } from '../components/ui/button.jsx';
 
 const ProductGallery = ({ images, altText }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
