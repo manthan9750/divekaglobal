@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { ShoppingCart, Heart, Search, Menu, X } from 'lucide-react';
-import { useCart } from '@/context/CartContext.jsx';
-import { useWishlist } from '@/context/WishlistContext.jsx';
-import { BRAND_NAME } from '@/data/constants.js';
-import { Button } from '@/components/ui/button.jsx';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet.jsx';
-import { Input } from '@/components/ui/input.jsx';
+import { useCart } from '../context/CartContext.jsx';
+import { useWishlist } from '../context/WishlistContext.jsx';
+import { BRAND_NAME } from '../data/constants.js';
+import { Button } from '../components/ui/button.jsx';
+import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet.jsx';
+import { Input } from '../components/ui/input.jsx';
 
 const NavLinks = ({ onClick }) => {
   const location = useLocation();
