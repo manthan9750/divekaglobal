@@ -3,10 +3,10 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { toast } from 'sonner';
-import { Input } from '@/components/ui/input.jsx';
-import { Textarea } from '@/components/ui/textarea.jsx';
-import { Button } from '@/components/ui/button.jsx';
-import { Label } from '@/components/ui/label.jsx';
+import { Input } from '../components/ui/input.jsx';
+import { Textarea } from '../components/ui/textarea.jsx';
+import { Button } from '../components/ui/button.jsx';
+import { Label } from '../components/ui/label.jsx';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
