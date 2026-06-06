@@ -5,7 +5,7 @@ import {
   filterByPriceRange, 
   sortProducts,
   filterByTags 
-} from '@/utils/productHelpers.js';
+} from '../utils/productHelpers.js';
 
 const useFilters = (allProducts) => {
   const [selectedFlavors, setSelectedFlavors] = useState([]);
