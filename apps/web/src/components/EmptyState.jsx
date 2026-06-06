@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Button } from '../components/ui/button.jsx';
+import { Button } from '@/components/ui/button.jsx';
 
 const EmptyState = ({ title, description, icon: Icon, ctaText = 'Continue Shopping', ctaLink = '/products' }) => {
   return (
