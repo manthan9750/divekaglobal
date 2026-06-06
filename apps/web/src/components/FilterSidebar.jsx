@@ -1,10 +1,10 @@
 import React from 'react';
-import { Slider } from '../components/ui/slider.jsx';
-import { Checkbox } from '../components/ui/checkbox.jsx';
-import { Label } from '../components/ui/label.jsx';
-import { Button } from '../components/ui/button.jsx';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion.jsx';
-import { FLAVORS, TAGS } from '../data/constants.js';
+import { Slider } from '@/components/ui/slider.jsx';
+import { Checkbox } from '@/components/ui/checkbox.jsx';
+import { Label } from '@/components/ui/label.jsx';
+import { Button } from '@/components/ui/button.jsx';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion.jsx';
+import { FLAVORS, TAGS } from '@/data/constants.js';
 import { X, Star } from 'lucide-react';
 
 const FilterSidebar = ({ filters, filterActions, className }) => {
