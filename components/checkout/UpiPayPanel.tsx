@@ -45,10 +45,10 @@ export function UpiPayPanel({ total, orderId, isSubmitting, onComplete, onSwitch
   };
 
   if (!upiId) {
+    console.warn("NEXT_PUBLIC_UPI_ID is missing. UPI payments are hidden.");
     return (
       <div className="p-6 text-center text-red-500 bg-red-50 rounded-xl">
         UPI ID is not configured. Please use Confirmation Call.
-        {console.warn("NEXT_PUBLIC_UPI_ID is missing. UPI payments are hidden.")}
       </div>
     );
   }
