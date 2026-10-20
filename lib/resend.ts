@@ -6,8 +6,8 @@ import { OrderPayload } from "./types";
 import { formatINR } from "./format";
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
-const FROM_EMAIL = "onboarding@resend.dev"; // Fixed for Resend Free Tier
-const OWNER_EMAIL = process.env.NOTIFICATION_EMAIL || siteConfig.company.email;
+const FROM_EMAIL = "onboarding@resend.dev";
+const OWNER_EMAIL = process.env.NOTIFICATION_EMAIL ? process.env.NOTIFICATION_EMAIL : siteConfig.company.email;
 
 export async function sendOrderEmailToOwner(
   orderId: string,
@@ -83,13 +83,11 @@ export async function sendOrderEmailToOwner(
     if (error) return { success: false, error: error.message };
     return { success: true };
   } catch (err: any) {
-    return { success: false, error: err.message || "Unknown email error" };
+    return { success: false, error: err.message ? err.message : "Unknown email error" };
   }
 }
 
 export async function sendOrderEmailToCustomer(): Promise<{ success: boolean; error?: string }> {
-  // On the free tier, we CANNOT send to arbitrary customer emails.
-  // We return true immediately so it doesn't break the order API flow.
   return { success: true };
 }
 
@@ -111,10 +109,10 @@ export async function sendInquiryEmailToOwner(
         <p><strong>Phone:</strong> ${escapeHtml(payload.phone)}</p>
         <p><strong>Email:</strong> ${escapeHtml(payload.email)}</p>
         ${isWholesale ? `
-          <p><strong>Company:</strong> ${escapeHtml(payload.company || "N/A")}</p>
-          <p><strong>Location:</strong> ${escapeHtml(payload.city \vert{}\vert{} "N/A")}, ${escapeHtml(payload.country || "N/A")}</p>
-          <p><strong>Flavors:</strong> ${escapeHtml(payload.flavors || "N/A")}</p>
-          <p><strong>Est. Quantity:</strong> ${escapeHtml(payload.estimatedQuantity || "N/A")}</p>
+          <p><strong>Company:</strong> ${escapeHtml(payload.company ? payload.company : "N/A")}</p>
+          <p><strong>Location:</strong> ${escapeHtml(payload.city ? payload.city : "N/A")}, ${escapeHtml(payload.country ? payload.country : "N/A")}</p>
+          <p><strong>Flavors:</strong> ${escapeHtml(payload.flavors ? payload.flavors : "N/A")}</p>
+          <p><strong>Est. Quantity:</strong> ${escapeHtml(payload.estimatedQuantity ? payload.estimatedQuantity : "N/A")}</p>
         ` : ''}
         <p><strong>Message:</strong><br/>${escapeHtml(payload.message).replace(/\n/g, "<br/>")}</p>
       </div>
@@ -131,6 +129,6 @@ export async function sendInquiryEmailToOwner(
     if (error) return { success: false, error: error.message };
     return { success: true };
   } catch (err: any) {
-    return { success: false, error: err.message };
+    return { success: false, error: err.message ? err.message : "Unknown error" };
   }
 }
