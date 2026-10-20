@@ -46,7 +46,7 @@ export async function POST(req: Request) {
     const [sheetResult, ownerEmailResult] = await Promise.allSettled([
       sendOrderToSheet(orderId, payload, pricing),
       sendOrderEmailToOwner(orderId, payload, pricing),
-      sendOrderEmailToCustomer(orderId, payload, pricing) // fire-and-forget basically
+      sendOrderEmailToCustomer() // Fixed: Removed the 3 arguments here
     ]);
 
     const sheetSuccess = sheetResult.status === "fulfilled" && sheetResult.value.success;
