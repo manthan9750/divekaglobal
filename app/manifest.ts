@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: siteConfig.productTagline,
     start_url: "/",
     display: "standalone",
-    background_color: "#FAF6EC",
-    theme_color: "#1F3A5F",
+    background_color: "#FCF9F2",
+    theme_color: "#17202E",
     icons: [
       {
         src: "/favicon.ico",
@@ -20,7 +20,7 @@ export default function manifest(): MetadataRoute.Manifest {
         src: "/images/brand/logo-square.png",
         sizes: "512x512",
         type: "image/png",
-        purpose: "any maskable"
+        purpose: "maskable"
       },
     ],
   };
