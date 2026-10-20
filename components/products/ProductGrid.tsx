@@ -13,7 +13,7 @@ export function ProductGrid({ products }: ProductGridProps) {
       <div className="flex flex-col items-center justify-center rounded-3xl border border-dashed border-gray-300 bg-white/50 py-24 px-4 text-center">
         <h3 className="font-playfair text-2xl font-bold text-navy mb-2">No products found</h3>
         <p className="text-charcoal/60 max-w-md">
-          Try adjusting your filters or search terms to find what you're looking for.
+          Try adjusting your filters or search terms to find what you&apos;re looking for.
         </p>
       </div>
     );

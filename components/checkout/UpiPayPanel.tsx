@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import QRCode from "qrcode";
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { generateUpiLink, isValidUtr } from "@/lib/upi";
@@ -74,7 +75,7 @@ export function UpiPayPanel({ total, orderId, isSubmitting, onComplete, onSwitch
             <p className="text-sm font-medium text-navy mb-4">Scan QR with any UPI App to Pay</p>
             {qrCodeUrl ? (
               <div className="rounded-xl overflow-hidden border border-gray-100 shadow-sm mb-4 bg-white p-2">
-                <img src={qrCodeUrl} alt="UPI QR Code" width={200} height={200} />
+                <Image src={qrCodeUrl} alt="UPI QR Code" width={200} height={200} />
               </div>
             ) : (
               <div className="h-[200px] w-[200px] bg-gray-100 animate-pulse rounded-xl mb-4" />

@@ -14,7 +14,7 @@ export function ActiveFilterChips() {
       
       {searchQuery && (
         <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-3 py-1 text-sm border border-gray-200 shadow-sm">
-          <span className="text-navy">"{searchQuery}"</span>
+          <span className="text-navy">&quot;{searchQuery}&quot;</span>
           <button onClick={() => setFilter("q", null)} className="text-gray-400 hover:text-red-500">
             <X className="h-3.5 w-3.5" />
           </button>

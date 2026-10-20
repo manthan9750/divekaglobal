@@ -71,7 +71,7 @@ export function WholesaleForm() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-5 rounded-2xl bg-white p-6 shadow-soft border border-gray-100">
       <h3 className="font-playfair text-xl font-bold text-navy mb-2">Request a Quote</h3>
-      <p className="text-sm text-charcoal/60 mb-4">Fill out the form below and we'll get back to you with pricing and MOQ details.</p>
+      <p className="text-sm text-charcoal/60 mb-4">Fill out the form below and we&apos;ll get back to you with pricing and MOQ details.</p>
       
       <input type="text" name="website" value={formData.website} onChange={handleChange} className="hidden" tabIndex={-1} />
       
