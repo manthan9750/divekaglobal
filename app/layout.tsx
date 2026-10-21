@@ -6,6 +6,7 @@ import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
+import { CookieBanner } from "@/components/layout/CookieBanner";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { siteConfig } from "@/lib/config/site";
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <Footer />
           <WhatsAppFloat />
+          <CookieBanner />
           <div id="cart-drawer-root"></div>
           <CartDrawer />
         </Providers>

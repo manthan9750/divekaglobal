@@ -2,12 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { footerLinks } from "@/lib/data/nav";
 import { siteConfig } from "@/lib/config/site";
+import { Instagram, Facebook } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-navy pt-16 text-cream">
+    <footer className="bg-navy pt-16 text-cream border-t border-gold/20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-5 xl:gap-8">
           
@@ -16,7 +17,7 @@ export function Footer() {
             <Link href="/" className="inline-block mb-4">
               <div className="flex items-center gap-3">
                 <Image
-                  src="/images/brand/logo-square.jpg"
+                  src="/images/brand/logo-square.png"
                   alt="Divekaa Global Logo"
                   width={48}
                   height={48}
@@ -31,9 +32,19 @@ export function Footer() {
               {siteConfig.tagline} <br />
               {siteConfig.productTagline}
             </p>
-            <div className="text-sm text-cream/80 space-y-2">
+            <div className="text-sm text-cream/80 space-y-2 mb-6">
               <p><strong>FSSAI:</strong> {siteConfig.company.fssai}</p>
               <p><strong>Call:</strong> +91 {siteConfig.company.primaryPhone}</p>
+            </div>
+            
+            {/* Social Icons Added Here */}
+            <div className="flex items-center gap-4">
+              <a href="https://instagram.com/divekaaglobal" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-gold hover:bg-gold hover:text-navy transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://facebook.com/divekaaglobal" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-gold hover:bg-gold hover:text-navy transition-colors">
+                <Facebook className="h-5 w-5" />
+              </a>
             </div>
           </div>
 
