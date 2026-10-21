@@ -33,7 +33,7 @@ export function generateMetadata({ params }: Props): Metadata {
     return { title: "Product Not Found" };
   }
 
-  const url = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaaglobal.com";
+  const url = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaglobal.com";
 
   return {
     title: product.name,
@@ -64,7 +64,7 @@ export default function ProductDetailPage({ params }: Props) {
   }));
 
   // JSON-LD Product Offer
-  const url = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaaglobal.com";
+  const url = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaglobal.com";
   const jsonLd = {
     "@context": "https://schema.org/",
     "@type": "Product",

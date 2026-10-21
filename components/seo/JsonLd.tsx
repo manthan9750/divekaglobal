@@ -14,7 +14,7 @@ export function JsonLd({ data }: JsonLdProps) {
 }
 
 export function OrganizationJsonLd() {
-  const url = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaaglobal.com";
+  const url = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaglobal.com";
   
   return (
     <JsonLd

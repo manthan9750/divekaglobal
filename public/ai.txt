@@ -1,5 +1,5 @@
 # AI.txt for Divekaa Global
-# https://divekaaglobal.com
+# https://divekaglobal.com
 
 User-Agent: *
 Allow: /
