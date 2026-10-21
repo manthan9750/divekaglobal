@@ -3,7 +3,7 @@ import { products } from "@/lib/data/products";
 import { blogPosts } from "@/lib/data/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaaglobal.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaglobal.com";
 
   // Core Pages
   const staticRoutes = [

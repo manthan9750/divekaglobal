@@ -14,7 +14,7 @@ import { siteConfig } from "@/lib/config/site";
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair", display: "swap" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaaglobal.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://divekaglobal.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
